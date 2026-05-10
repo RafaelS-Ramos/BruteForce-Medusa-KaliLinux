@@ -1,1 +1,14 @@
+Security Recommendations
+Mitigation Measures
+Multi-factor authentication (MFA)
+Strong password policies
+Account lockout after failed attempts
+CAPTCHA for web authentication
+Log monitoring
+Rate limiting
+Network segmentation
+Fail2ban implementation
+Security awareness training
+Lessons Learned
 
+This laboratory demonstrated how weak credentials and lack of authentication controls may expose services to brute force attacks.
